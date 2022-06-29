@@ -14,13 +14,13 @@ const UploadPage = () => {
                         <span>이미지를 업로드 해주세요.</span>
                     </div>
                 </Form.Item>
-                <Divider>
-                    <Form.Item name="seller"
-                    label={<div className='upload-label'>판매자명</div>}>
-                        <Input className='nameUpload' size='large'
-                        placeholder='판매자이름을 입력하세요' />
-                    </Form.Item>
-                </Divider>
+                <Divider />
+                <Form.Item name="seller"
+                label={<div className='upload-label'>판매자명</div>}>
+                    <Input className='nameUpload' size='large'
+                    placeholder='판매자이름을 입력하세요' />
+                </Form.Item>
+                <Divider/>
                 <Form.Item name="name" 
                 label={<div className='upload-label'>상품이름</div>}>
                     <Input
@@ -31,7 +31,7 @@ const UploadPage = () => {
                 </Form.Item>
                 <Divider/>
                 <Form.Item name="price"
-                label={<div>상품가격</div>}>
+                label={<div className='upload-label'>상품가격</div>}>
                     <InputNumber defaultValue={0} size='large'/>
                 </Form.Item>
                 <Divider/>
