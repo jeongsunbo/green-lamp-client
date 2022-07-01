@@ -12,8 +12,8 @@ function App() {
         <Header/>
         <Routes>
             <Route path="/" element={<MainPage/>}/>
-            <Route path="product" element={<ProductPage/>}/>
-            <Route path="upload" element={<UploadPage/>}/>
+            <Route path="/product/:id" element={<ProductPage/>}/>
+            <Route path="/upload" element={<UploadPage/>}/>
         </Routes>
         <Footer/>
     </div>
