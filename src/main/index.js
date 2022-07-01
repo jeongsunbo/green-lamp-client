@@ -2,17 +2,19 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './index.scss';
 import MainProduct from './MainProduct';
+
 const MainPage = () => {
     const [products, setProducts] = useState([]);
     useEffect(()=> {
-        axios.get("http://localhost:3000/products")
+        axios.get(`http://localhost:3000/products`) //이주소로 요청
         .then(result=>{
-            const products = result.data.products;
+            const products = result.data.product; //result의 
             setProducts(products);
+            console.log(products);
         }).catch((e)=>{
             console.log(e);
         })
-    })
+    },[])
     if(products===[]) return <div>로딩중입니다</div>;
     return (
         <div>

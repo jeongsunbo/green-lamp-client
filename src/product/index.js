@@ -21,7 +21,8 @@ const ProductPage = () => {
     return (
         <div className='inner'>
             <div id="image-box">
-                <img src="/images/products/product2.jpg" alt=''/>
+            {/* "/images/products/product2.jpg" */}
+                <img src={product.imageUrl} alt=''/>
             </div>
             <div id='profile-box' className='inner'>
                 <ul>

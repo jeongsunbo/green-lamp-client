@@ -5,7 +5,7 @@ const MainProduct = ({product}) => {
         <div className='product-card'>
             <Link to={`/product/${product.id}`}>
                 <div className='product-img'>
-                    <img src={product.imgsrc} alt=''/>
+                    <img src={product.imageUrl} alt=''/>
                 </div>
                 <div className='product-contents'>
                     <span className='product-name'>{product.name}</span>
